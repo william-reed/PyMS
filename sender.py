@@ -22,8 +22,6 @@ class PyMS:
         self.password = password or os.environ.get('PYMS_PASSWORD')
         self.host = host
         self.port = port
-        print(self.host)
-        print(self.port)
         self.smtpserver = smtplib.SMTP_SSL(self.host, self.port)
 
     def connect(self):
